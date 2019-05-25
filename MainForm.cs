@@ -1,0 +1,33 @@
+﻿using Rosario_Registry.UI.Registros;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Rosario_Registry
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rUsuarios ru = new rUsuarios();
+            ru.Show();
+        }
+
+        private void CargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rCargos rc = new rCargos();
+            rc.Show();
+        }
+    }
+}
