@@ -9,7 +9,7 @@ using Rosario_Registry.Entidades;
 namespace Rosario_Registry.DAL
 {
     public class ContextoCargos : DbContext
-    {
+    { 
         public DbSet<Cargos> cargos { get; set; }
 
         public ContextoCargos() : base("ConStr") { }
