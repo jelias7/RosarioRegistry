@@ -9,7 +9,7 @@ using System.Data.Entity;
 using System.Linq.Expressions;
 
 namespace Rosario_Registry.BLL
-{
+{ 
     public class UsuariosBLL
     {
         public static bool Guardar(Usuarios usuarios)
