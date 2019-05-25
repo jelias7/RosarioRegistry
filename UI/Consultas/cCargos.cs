@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Rosario_Registry.Entidades;
+using Rosario_Registry.BLL;
 
 namespace Rosario_Registry.UI.Consultas
 {
@@ -15,6 +17,39 @@ namespace Rosario_Registry.UI.Consultas
         public cCargos()
         {
             InitializeComponent();
+        }
+
+        private void Consultabutton_Click(object sender, EventArgs e)
+        {
+            var listado = new List<Cargos>();
+
+            if (CriteriotextBox.Text.Trim().Length > 0)
+            {
+                switch (FiltrarcomboBox.Text)
+                {
+                    case "Todo":
+                        listado = CargosBLL.GetList(p => true);
+                        break;
+
+                    case "ID":
+                        int id = Convert.ToInt32(CriteriotextBox.Text);
+                        listado = CargosBLL.GetList(p => p.CargoID == id);
+                        break;
+
+                    case "Descripcion":
+                        listado = CargosBLL.GetList(p => p.Descripcion.Contains(CriteriotextBox.Text));
+                        break;
+
+                }
+
+            }
+            else
+            {
+                listado = CargosBLL.GetList(p => true);
+            }
+
+            ConsultadataGridView.DataSource = null;
+            ConsultadataGridView.DataSource = listado;
         }
     }
 }
