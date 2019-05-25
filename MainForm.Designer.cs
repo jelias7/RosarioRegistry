@@ -33,6 +33,8 @@
             this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,22 +61,37 @@
             // cargosToolStripMenuItem
             // 
             this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
-            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.cargosToolStripMenuItem.Text = "Cargos";
             this.cargosToolStripMenuItem.Click += new System.EventHandler(this.CargosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.UsuariosToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem1,
+            this.cargosToolStripMenuItem1});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // usuariosToolStripMenuItem1
+            // 
+            this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem1.Text = "Usuarios";
+            // 
+            // cargosToolStripMenuItem1
+            // 
+            this.cargosToolStripMenuItem1.Name = "cargosToolStripMenuItem1";
+            this.cargosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cargosToolStripMenuItem1.Text = "Cargos";
             // 
             // MainForm
             // 
@@ -99,6 +116,8 @@
         private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem1;
     }
 }
 
