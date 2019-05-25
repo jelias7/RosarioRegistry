@@ -19,19 +19,19 @@ namespace Rosario_Registry
             InitializeComponent();
         }
 
-        private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void rUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rUsuarios ru = new rUsuarios();
             ru.Show();
         }
 
-        private void CargosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void rCargosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rCargos rc = new rCargos();
             rc.Show();
         }
 
-        private void CargosToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void cCargosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cCargos cc = new cCargos();
             cc.Show();
