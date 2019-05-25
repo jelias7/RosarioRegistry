@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Rosario_Registry.BLL;
 using Rosario_Registry.Entidades;
-
+ 
 namespace Rosario_Registry.UI.Registros
 {
     public partial class rCargos : Form
