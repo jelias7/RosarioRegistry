@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Rosario_Registry.Entidades
 {
     public class Cargos
-    {
+    { 
         [Key]
 
         public int CargoID { get; set; }
