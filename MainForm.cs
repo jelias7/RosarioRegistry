@@ -1,4 +1,5 @@
-﻿using Rosario_Registry.UI.Registros;
+﻿using Rosario_Registry.UI.Consultas;
+using Rosario_Registry.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,12 @@ namespace Rosario_Registry
         {
             rCargos rc = new rCargos();
             rc.Show();
+        }
+
+        private void CargosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cCargos cc = new cCargos();
+            cc.Show();
         }
     }
 }

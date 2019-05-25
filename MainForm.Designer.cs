@@ -92,6 +92,7 @@
             this.cargosToolStripMenuItem1.Name = "cargosToolStripMenuItem1";
             this.cargosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cargosToolStripMenuItem1.Text = "Cargos";
+            this.cargosToolStripMenuItem1.Click += new System.EventHandler(this.CargosToolStripMenuItem1_Click);
             // 
             // MainForm
             // 
