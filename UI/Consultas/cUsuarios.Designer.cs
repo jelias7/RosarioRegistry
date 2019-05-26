@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,9 @@
             this.DesdedateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Consultabutton = new System.Windows.Forms.Button();
             this.ConsultadataGridView = new System.Windows.Forms.DataGridView();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +86,6 @@
             this.CriteriotextBox.Name = "CriteriotextBox";
             this.CriteriotextBox.Size = new System.Drawing.Size(205, 20);
             this.CriteriotextBox.TabIndex = 4;
-
             // 
             // FiltrarcomboBox
             // 
@@ -143,6 +145,10 @@
             this.ConsultadataGridView.Size = new System.Drawing.Size(644, 298);
             this.ConsultadataGridView.TabIndex = 9;
             // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
             // cUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +167,7 @@
             this.Name = "cUsuarios";
             this.Text = "Consulta Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +185,6 @@
         private System.Windows.Forms.DateTimePicker DesdedateTimePicker;
         private System.Windows.Forms.Button Consultabutton;
         private System.Windows.Forms.DataGridView ConsultadataGridView;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }
