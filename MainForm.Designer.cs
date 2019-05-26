@@ -61,14 +61,14 @@
             // rCargosToolStripMenuItem
             // 
             this.rCargosToolStripMenuItem.Name = "rCargosToolStripMenuItem";
-            this.rCargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rCargosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.rCargosToolStripMenuItem.Text = "Cargos";
             this.rCargosToolStripMenuItem.Click += new System.EventHandler(this.rCargosToolStripMenuItem_Click);
             // 
             // rUsuariosToolStripMenuItem
             // 
             this.rUsuariosToolStripMenuItem.Name = "rUsuariosToolStripMenuItem";
-            this.rUsuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rUsuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.rUsuariosToolStripMenuItem.Text = "Usuarios";
             this.rUsuariosToolStripMenuItem.Click += new System.EventHandler(this.rUsuariosToolStripMenuItem_Click);
             // 
@@ -86,6 +86,7 @@
             this.cUsuariosToolStripMenuItem1.Name = "cUsuariosToolStripMenuItem1";
             this.cUsuariosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cUsuariosToolStripMenuItem1.Text = "Usuarios";
+            this.cUsuariosToolStripMenuItem1.Click += new System.EventHandler(this.CUsuariosToolStripMenuItem1_Click);
             // 
             // cCargosToolStripMenuItem
             // 

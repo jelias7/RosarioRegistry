@@ -36,5 +36,11 @@ namespace Rosario_Registry
             cCargos cc = new cCargos();
             cc.Show();
         }
+
+        private void CUsuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cUsuarios cu = new cUsuarios();
+            cu.Show();
+        }
     }
 }
