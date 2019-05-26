@@ -83,6 +83,7 @@
             this.CriteriotextBox.Name = "CriteriotextBox";
             this.CriteriotextBox.Size = new System.Drawing.Size(205, 20);
             this.CriteriotextBox.TabIndex = 4;
+
             // 
             // FiltrarcomboBox
             // 

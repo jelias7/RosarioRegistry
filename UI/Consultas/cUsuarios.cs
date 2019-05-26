@@ -18,6 +18,7 @@ namespace Rosario_Registry.UI.Consultas
         {
             InitializeComponent();
         }
+        
 
         private void Consultabutton_Click(object sender, EventArgs e)
         {
