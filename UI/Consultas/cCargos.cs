@@ -19,9 +19,25 @@ namespace Rosario_Registry.UI.Consultas
             InitializeComponent();
         }
 
+        private bool Validar()
+        {
+            bool paso = false;
+
+            if (FiltrarcomboBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(FiltrarcomboBox, "Este campo no puede estar vacio.");
+                FiltrarcomboBox.Focus();
+                paso = true;
+            }
+
+            return paso;
+        }
+
         private void Consultabutton_Click(object sender, EventArgs e)
         {
             var listado = new List<Cargos>();
+            if (Validar())
+                return;
 
             if (CriteriotextBox.Text.Trim().Length > 0)
             {
