@@ -60,7 +60,7 @@ namespace Rosario_Registry.UI.Consultas
                     default:
                         break;
                 }
-                listado = listado.Where(c => c.FechaIngreso.Date >= DesdedateTimePicker.Value.Date && c.FechaIngreso.Date <= HastadateTimePicker.Value.Date).ToList();
+                
             }
             else
             {
