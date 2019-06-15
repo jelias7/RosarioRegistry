@@ -101,12 +101,40 @@ namespace Rosario_Registry.UI.Registros
                 Detalle.RemoveAt(ResultadodataGridView.CurrentRow.Index);
             }
         }
+        private bool Validar()
+        {
+            bool paso = true;
+            MyErrorProvider.Clear();
 
+            if (ResultadotextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(ResultadotextBox, "El Campo no puede estar vacio.");
+                ResultadotextBox.Focus();
+                paso = false;
+            }
+            if (TipocomboBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(TipocomboBox, "El Campo no puede estar vacio.");
+                TipocomboBox.Focus();
+                paso = false;
+            }
+            if (UsuariocomboBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(UsuariocomboBox, "El Campo no puede estar vacio.");
+                UsuariocomboBox.Focus();
+                paso = false;
+            }
+
+
+            return paso;
+        }
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             Analisis analisis;
             bool paso = false;
 
+            if (!Validar())
+                return;
 
             analisis = LlenaClase();
 

@@ -71,7 +71,22 @@ namespace Rosario_Registry.UI.Registros
         {
             Limpiar();
         }
+        private bool Validar()
+        {
+            bool paso = true;
+            MyErrorProvider.Clear();
 
+            if (DescripciontextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(DescripciontextBox, "El Campo no puede estar vacio.");
+                DescripciontextBox.Focus();
+                paso = false;
+            }
+
+
+
+            return paso;
+        }
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             TiposAnalisis analisis;

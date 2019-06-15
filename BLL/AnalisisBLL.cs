@@ -91,7 +91,9 @@ namespace Rosario_Registry.BLL
             try
             {
                 analisis = db.analisis.Find(id);
-                analisis.Resultado.Count();
+
+                if(analisis != null)
+                    analisis.Resultado.Count();
             }
             catch (Exception)
             {
