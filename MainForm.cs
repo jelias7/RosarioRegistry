@@ -42,5 +42,11 @@ namespace Rosario_Registry
             cUsuarios cu = new cUsuarios();
             cu.Show();
         }
+
+        private void AnalisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rAnalisis ra = new rAnalisis();
+            ra.Show();
+        }
     }
 }

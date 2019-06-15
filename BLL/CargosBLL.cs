@@ -15,7 +15,7 @@ namespace Rosario_Registry.BLL
         public static bool Guardar(Cargos cargos)
         {
             bool paso = false;
-            ContextoCargos db = new ContextoCargos();
+            Contexto db = new Contexto();
             try
             {
                 if (db.cargos.Add(cargos) != null)
@@ -35,7 +35,7 @@ namespace Rosario_Registry.BLL
         public static bool Modificar(Cargos cargos)
         {
             bool paso = false;
-            ContextoCargos db = new ContextoCargos();
+            Contexto db = new Contexto();
 
             try
             {
@@ -56,7 +56,7 @@ namespace Rosario_Registry.BLL
         public static bool Eliminar(int id)
         {
             bool paso = false;
-            ContextoCargos db = new ContextoCargos();
+            Contexto db = new Contexto();
 
             try
             {
@@ -78,7 +78,7 @@ namespace Rosario_Registry.BLL
 
         public static Cargos Buscar(int id)
         {
-            ContextoCargos db = new ContextoCargos();
+            Contexto db = new Contexto();
             Cargos cargos = new Cargos();
 
             try
@@ -99,7 +99,7 @@ namespace Rosario_Registry.BLL
         public static List<Cargos> GetList(Expression<Func<Cargos, bool>> cargos)
         {
             List<Cargos> Lista = new List<Cargos>();
-            ContextoCargos db = new ContextoCargos();
+            Contexto db = new Contexto();
 
             try
             {

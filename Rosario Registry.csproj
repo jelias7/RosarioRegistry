@@ -55,9 +55,11 @@
   <ItemGroup>
     <Compile Include="BLL\CargosBLL.cs" />
     <Compile Include="BLL\UsuariosBLL.cs" />
-    <Compile Include="DAL\ContextoUsuarios.cs" />
-    <Compile Include="DAL\ContextoCargos.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Analisis.cs" />
+    <Compile Include="Entidades\AnalisisDetalle.cs" />
     <Compile Include="Entidades\Cargos.cs" />
+    <Compile Include="Entidades\TiposAnalisis.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -79,11 +81,23 @@
     <Compile Include="UI\Consultas\cUsuarios.Designer.cs">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\rAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rAnalisis.Designer.cs">
+      <DependentUpon>rAnalisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rCargos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Registros\rCargos.Designer.cs">
       <DependentUpon>rCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rTipoAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rTipoAnalisis.Designer.cs">
+      <DependentUpon>rTipoAnalisis.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\rUsuarios.cs">
       <SubType>Form</SubType>
@@ -110,8 +124,14 @@
     <EmbeddedResource Include="UI\Consultas\cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rAnalisis.resx">
+      <DependentUpon>rAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rCargos.resx">
       <DependentUpon>rCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rTipoAnalisis.resx">
+      <DependentUpon>rTipoAnalisis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rUsuarios.resx">
       <DependentUpon>rUsuarios.cs</DependentUpon>

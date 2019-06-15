@@ -15,7 +15,7 @@ namespace Rosario_Registry.BLL
         public static bool Guardar(Usuarios usuarios)
         {
             bool paso = false;
-            ContextoUsuarios db = new ContextoUsuarios();
+            Contexto db = new Contexto();
             try
             {
                 if (db.User.Add(usuarios) != null)
@@ -35,7 +35,7 @@ namespace Rosario_Registry.BLL
         public static bool Modificar(Usuarios usuarios)
         {
             bool paso = false;
-            ContextoUsuarios db = new ContextoUsuarios();
+            Contexto db = new Contexto();
 
             try
             {
@@ -56,7 +56,7 @@ namespace Rosario_Registry.BLL
         public static bool Eliminar(int id)
         {
             bool paso = false;
-            ContextoUsuarios db = new ContextoUsuarios();
+            Contexto db = new Contexto();
 
             try
             {
@@ -78,7 +78,7 @@ namespace Rosario_Registry.BLL
 
         public static Usuarios Buscar(int id)
         {
-            ContextoUsuarios db = new ContextoUsuarios();
+            Contexto db = new Contexto();
             Usuarios usuarios = new Usuarios();
 
             try
@@ -99,7 +99,7 @@ namespace Rosario_Registry.BLL
         public static List<Usuarios> GetList(Expression<Func<Usuarios, bool>> usuarios)
         {
             List<Usuarios> Lista = new List<Usuarios>();
-            ContextoUsuarios db = new ContextoUsuarios();
+            Contexto db = new Contexto();
 
             try
             {
