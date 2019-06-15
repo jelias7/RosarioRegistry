@@ -18,11 +18,29 @@ namespace Rosario_Registry.UI.Registros
         public rAnalisis()
         {
             InitializeComponent();
+            ListadoUsuario();
+            ListadoTipos();
             this.Detalle = new List<AnalisisDetalle>();
         }
 
+        private void ListadoUsuario()
+        {
+            var listado = new List<Usuarios>();
 
+            listado = UsuariosBLL.GetList(p => true);
+            UsuariocomboBox.DataSource = listado;
+            UsuariocomboBox.DisplayMember = "Usuario";
+            UsuariocomboBox.ValueMember = "UsuarioId";
+        }
+        private void ListadoTipos()
+        {
+            var listado = new List<TiposAnalisis>();
 
+            listado = TipoAnalisisBLL.GetList(p => true);
+            TipocomboBox.DataSource = listado;
+            TipocomboBox.ValueMember = "TipoId";
+            TipocomboBox.DisplayMember = "Descripcion";
+        }
         private void TipoAnalisisbutton_Click(object sender, EventArgs e)
         {
             rTipoAnalisis rta = new rTipoAnalisis();
@@ -44,7 +62,7 @@ namespace Rosario_Registry.UI.Registros
             Analisis analisis = new Analisis();
             analisis.AnalisisId = Convert.ToInt32(IDnumericUpDown.Value);
             analisis.Fecha = FechadateTimePicker.Value;
-            analisis.UsuarioId = Convert.ToInt32(UsuariocomboBox.Text);
+            analisis.UsuarioId = Convert.ToInt32(UsuariocomboBox.SelectedValue);
             analisis.Resultado = this.Detalle;
             return analisis;
         }
@@ -99,6 +117,8 @@ namespace Rosario_Registry.UI.Registros
             if(ResultadodataGridView.Rows.Count > 0 && ResultadodataGridView.CurrentRow != null)
             {
                 Detalle.RemoveAt(ResultadodataGridView.CurrentRow.Index);
+
+                CargarGrid();
             }
         }
         private bool Validar()

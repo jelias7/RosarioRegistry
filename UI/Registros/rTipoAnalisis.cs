@@ -31,7 +31,7 @@ namespace Rosario_Registry.UI.Registros
         private TiposAnalisis LlenaClase()
         {
             TiposAnalisis analisis = new TiposAnalisis();
-            analisis.TipoId = Convert.ToInt32(TipoIDnumericUpDown);
+            analisis.TipoId = Convert.ToInt32(TipoIDnumericUpDown.Value);
             analisis.Descripcion = DescripciontextBox.Text;
             return analisis;
         }
