@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.TipoIDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TipoIDnumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // TipoIDnumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(93, 19);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 0;
+            this.TipoIDnumericUpDown.Location = new System.Drawing.Point(93, 19);
+            this.TipoIDnumericUpDown.Name = "TipoIDnumericUpDown";
+            this.TipoIDnumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this.TipoIDnumericUpDown.TabIndex = 0;
             // 
             // label1
             // 
@@ -55,12 +55,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "TipoID";
             // 
-            // textBox1
+            // DescripciontextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 20);
-            this.textBox1.TabIndex = 2;
+            this.DescripciontextBox.Location = new System.Drawing.Point(93, 61);
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.Size = new System.Drawing.Size(173, 20);
+            this.DescripciontextBox.TabIndex = 2;
             // 
             // label2
             // 
@@ -129,12 +129,12 @@
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.TipoIDnumericUpDown);
             this.Name = "rTipoAnalisis";
             this.Text = "rTipoAnalisis";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TipoIDnumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,9 +142,9 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown TipoIDnumericUpDown;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.Button Eliminarbutton;

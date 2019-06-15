@@ -28,34 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.components = new System.ComponentModel.Container();
+            this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.UsuariocomboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.TipocomboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ResultadotextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Agregarbutton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ResultadodataGridView = new System.Windows.Forms.DataGridView();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Removerbutton = new System.Windows.Forms.Button();
             this.TipoAnalisisbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultadodataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // IDnumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(66, 22);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(106, 20);
-            this.numericUpDown1.TabIndex = 0;
+            this.IDnumericUpDown.Location = new System.Drawing.Point(66, 22);
+            this.IDnumericUpDown.Name = "IDnumericUpDown";
+            this.IDnumericUpDown.Size = new System.Drawing.Size(106, 20);
+            this.IDnumericUpDown.TabIndex = 0;
             // 
             // label1
             // 
@@ -84,13 +87,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha";
             // 
-            // comboBox1
+            // UsuariocomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(66, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 21);
-            this.comboBox1.TabIndex = 4;
+            this.UsuariocomboBox.FormattingEnabled = true;
+            this.UsuariocomboBox.Location = new System.Drawing.Point(66, 100);
+            this.UsuariocomboBox.Name = "UsuariocomboBox";
+            this.UsuariocomboBox.Size = new System.Drawing.Size(241, 21);
+            this.UsuariocomboBox.TabIndex = 4;
             // 
             // label3
             // 
@@ -101,13 +104,13 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Usuario";
             // 
-            // comboBox2
+            // TipocomboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(15, 173);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(202, 21);
-            this.comboBox2.TabIndex = 6;
+            this.TipocomboBox.FormattingEnabled = true;
+            this.TipocomboBox.Location = new System.Drawing.Point(15, 173);
+            this.TipocomboBox.Name = "TipocomboBox";
+            this.TipocomboBox.Size = new System.Drawing.Size(202, 21);
+            this.TipocomboBox.TabIndex = 6;
             // 
             // label4
             // 
@@ -118,17 +121,17 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Tipo Analisis:";
             // 
-            // textBox1
+            // ResultadotextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(276, 174);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 8;
+            this.ResultadotextBox.Location = new System.Drawing.Point(276, 174);
+            this.ResultadotextBox.Name = "ResultadotextBox";
+            this.ResultadotextBox.Size = new System.Drawing.Size(143, 20);
+            this.ResultadotextBox.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(232, 142);
+            this.label5.Location = new System.Drawing.Point(273, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 9;
@@ -142,17 +145,18 @@
             this.Agregarbutton.TabIndex = 10;
             this.Agregarbutton.Text = "+";
             this.Agregarbutton.UseVisualStyleBackColor = true;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
-            // dataGridView1
+            // ResultadodataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 212);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(458, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.ResultadodataGridView.AllowUserToAddRows = false;
+            this.ResultadodataGridView.AllowUserToDeleteRows = false;
+            this.ResultadodataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultadodataGridView.Location = new System.Drawing.Point(15, 212);
+            this.ResultadodataGridView.Name = "ResultadodataGridView";
+            this.ResultadodataGridView.ReadOnly = true;
+            this.ResultadodataGridView.Size = new System.Drawing.Size(458, 150);
+            this.ResultadodataGridView.TabIndex = 11;
             // 
             // Buscarbutton
             // 
@@ -165,6 +169,7 @@
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // Guardarbutton
             // 
@@ -177,6 +182,7 @@
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // Eliminarbutton
             // 
@@ -189,6 +195,7 @@
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Nuevobutton
             // 
@@ -201,6 +208,7 @@
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Removerbutton
             // 
@@ -213,6 +221,7 @@
             this.Removerbutton.Text = "Remover Fila";
             this.Removerbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Removerbutton.UseVisualStyleBackColor = true;
+            this.Removerbutton.Click += new System.EventHandler(this.Removerbutton_Click);
             // 
             // TipoAnalisisbutton
             // 
@@ -223,6 +232,10 @@
             this.TipoAnalisisbutton.Text = "+";
             this.TipoAnalisisbutton.UseVisualStyleBackColor = true;
             this.TipoAnalisisbutton.Click += new System.EventHandler(this.TipoAnalisisbutton_Click);
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rAnalisis
             // 
@@ -235,22 +248,23 @@
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.Removerbutton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ResultadodataGridView);
             this.Controls.Add(this.Agregarbutton);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ResultadotextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.TipocomboBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.UsuariocomboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.IDnumericUpDown);
             this.Name = "rAnalisis";
             this.Text = "Registro de Analisis Medico";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultadodataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,23 +272,24 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown IDnumericUpDown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox UsuariocomboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox TipocomboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ResultadotextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Agregarbutton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ResultadodataGridView;
         private System.Windows.Forms.Button Removerbutton;
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.Button TipoAnalisisbutton;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

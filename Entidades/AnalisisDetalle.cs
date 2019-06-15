@@ -20,5 +20,12 @@ namespace Rosario_Registry.Entidades
             TipoId = 0;
             Resultado = string.Empty;
         }
+
+        public AnalisisDetalle(int analisisid, int tipoid, string resultado)
+        {
+            AnalisisId = analisisid;
+            TipoId = tipoid;
+            Resultado = resultado;
+        }
     }
 }
